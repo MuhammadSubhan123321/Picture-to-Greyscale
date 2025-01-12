@@ -1,0 +1,32 @@
+import matplotlib.pyplot as plt
+import numpy as np
+from matplotlib.image import imread
+
+# Read the image
+input_image = imread("D:\Python\Picture To Grayscale myenv1.0/kid madara.jpg")
+
+# Separate the color channels
+r, g, b = input_image[:,:,0], input_image[:,:,1], input_image[:,:,2]
+
+# Define the constants and gamma value
+gamma = 1.04
+r_const, g_const, b_const = 0.2126, 0.7152, 0.0722
+
+# Apply gamma correction and convert to grayscale
+grayscale_image = r_const * (r ** gamma) + g_const * (g ** gamma) + b_const * (b ** gamma)
+
+# Create subplots
+fig, (img1, img2) = plt.subplots(1, 2)
+
+# Display the original image
+img1.imshow(input_image)
+img1.set_title('Original Image')
+img1.axis('off')
+
+# Display the grayscale image
+img2.imshow(grayscale_image, cmap=plt.cm.gray)
+img2.set_title('Grayscale Image')
+img2.axis('off')
+
+# Show the figure
+plt.show()
