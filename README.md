@@ -20,14 +20,6 @@
 
 **Displays both the original image and the grayscale image side by side**
 
-⚙️ Installation
-
--Clone the repository and install required dependencies:
-
-**git clone https://github.com/your-username/image-to-grayscale.git
-cd image-to-grayscale**
-
-
 **Install required Python libraries:**
 
 -pip install matplotlib numpy
