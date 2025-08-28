@@ -1,71 +1,75 @@
-🖼️ Image to Grayscale Conversion using Python
+🖼️ **Image to Grayscale Conversion using Python**
 
 **This project demonstrates how to convert a color image (RGB) into a grayscale image using Python, NumPy, and Matplotlib. The grayscale conversion is based on luminance perception (weighted RGB channels) along with gamma correction to enhance accuracy.**
 
-📌 Features
+📌 **Features**
 
--Reads an image using Matplotlib
+- Reads an image using Matplotlib
 
--Splits image into RGB color channels
+- Splits image into RGB color channels
 
--Applies gamma correction
+- Applies gamma correction
 
--Converts the image to grayscale using luminance coefficients:
+- Converts the image to grayscale using luminance coefficients:
 
--Red weight: 0.2126
+- Red weight: 0.2126
 
--Green weight: 0.7152
+- Green weight: 0.7152
 
--Blue weight: 0.0722
+- Blue weight: 0.0722
 
 **Displays both the original image and the grayscale image side by side**
 
 **Install required Python libraries:**
 
--pip install matplotlib numpy
+- pip install matplotlib numpy
 
-🚀 Usage
+🚀 **Usage**
 
 **Save your image in a local folder (e.g., kid_madara.jpg) and update the file path inside the script:**
 
--input_image = imread("D:/Python/Picture To Grayscale myenv1.0/kid madara.jpg")
+- input_image = imread("D:/Python/Picture To Grayscale myenv1.0/kid madara.jpg")
 
 
--Run the script:
+- Run the script:
 
--python grayscale_converter.py
+- python grayscale_converter.py
 
-📊 Code Workflow
+📊 **Code Workflow**
 
--Import libraries: Matplotlib & NumPy
+- Import libraries: Matplotlib & NumPy
 
--Read input image using imread()
+- Read input image using imread()
 
--Extract R, G, B channels
+- Extract R, G, B channels
 
--Apply gamma correction (gamma = 1.04)
+- Apply gamma correction (gamma = 1.04)
 
--Convert to grayscale using:
+- Convert to grayscale using:
 
--grayscale_image = r_const * (r ** gamma) + g_const * (g ** gamma) + b_const * (b ** gamma)
+- grayscale_image = r_const * (r ** gamma) + g_const * (g ** gamma) + b_const * (b ** gamma)
 
+- Display images using Matplotlib subplots
 
--Display images using Matplotlib subplots
-
-🖼️ Output Example
+🖼️ **Output Example**
 
 **The program displays:**
 
--Left: Original RGB Image
+- Left: Original RGB Image
 
--Right: Converted Grayscale Image
+- Right: Converted Grayscale Image
 
-📈 Applications
+📈 **Applications**
 
--Preprocessing images for Machine Learning / Computer Vision
+- Preprocessing images for Machine Learning / Computer Vision
 
--Enhancing visibility in medical imaging
+- Enhancing visibility in medical imaging
 
--Artistic and aesthetic transformations
+- Artistic and aesthetic transformations
 
--Reducing computational complexity in image processing
+- Reducing computational complexity in image processing
+
+👨‍💻 **Developer**
+
+Muhammad Subhan – Full-Stack Developer (in progress)
+
